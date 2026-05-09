@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import "primeicons/primeicons.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-sage: #5A5A40;
+  --color-cream: #f5f5f0;
+  --radius-caps: 32px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+}
+
+.caps-card {
+  background: white;
+  border-radius: var(--radius-caps);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.caps-button {
+  background-color: var(--color-sage);
+  color: white;
+  border-radius: 9999px;
+  padding: 12px 24px;
+  transition: all 0.2s ease;
+}
+
+.caps-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d1d1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b1b1b1;
+}
